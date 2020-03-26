@@ -23,7 +23,9 @@ export function InteractiveBoard({ game, onColumnClick }) {
       }
 
       column.push(
-        <Point color={colorName} key={`${columnIndex}-${rowIndex}`} />,
+        <div styleName="point-container">
+          <Point color={colorName} key={`${columnIndex}-${rowIndex}`} />
+        </div>,
       );
     }
 

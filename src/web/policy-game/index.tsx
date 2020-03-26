@@ -91,8 +91,12 @@ export function PolicyGame() {
         />
       )}
       <div styleName="resets">
-        <button onClick={() => onReset(false)}>reset</button>
-        <button onClick={() => onReset(true)}>computer starts game</button>
+        <button styleName="button" onClick={() => onReset(false)}>
+          reset
+        </button>
+        <button styleName="button" onClick={() => onReset(true)}>
+          computer starts game
+        </button>
       </div>
       {winner !== null && (
         <>
@@ -100,6 +104,12 @@ export function PolicyGame() {
           <Point color={Board.RED === winner ? "red" : "yellow"} />
         </>
       )}
+      <a
+        href="https://github.com/LuisSaybe/connect-4-reinforcement-learning-js"
+        styleName="github"
+      >
+        github
+      </a>
     </div>
   );
 }

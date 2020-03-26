@@ -1,1 +1,1 @@
-A web interface for models train with https://github.com/LuisSaybe/connect-4-reinforcement-learning
+A web interface for a connect 4 agent trained with https://github.com/LuisSaybe/connect-4-reinforcement-learning

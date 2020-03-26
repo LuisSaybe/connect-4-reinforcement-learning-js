@@ -17,11 +17,3 @@
     background-color: #ffe4b5;
   }
 }
-
-.point-container {
-  &:not(:last-child) {
-    border-bottom: 1px solid black;
-  }
-
-  padding: 0.5rem;
-}

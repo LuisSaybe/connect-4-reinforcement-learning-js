@@ -1,3 +1,8 @@
+.button {
+  padding: 2px 4px;
+  font-family: "Open Sans", sans-serif;
+}
+
 .resets {
   > *:not(:first-child) {
     margin-left: 5px;
@@ -14,6 +19,12 @@
   > *:not(:first-child) {
     margin-top: 10px;
   }
+}
+
+.github {
+  text-decoration: none;
+  margin-top: 12px;
+  display: inline;
 }
 
 .point {
