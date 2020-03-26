@@ -1,0 +1,10 @@
+.interactive-board {
+  display: flex;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background: none;
+  }
+}

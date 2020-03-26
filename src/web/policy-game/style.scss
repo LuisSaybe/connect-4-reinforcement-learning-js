@@ -1,0 +1,37 @@
+.resets {
+  > *:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+
+  > *:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+.point {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+  border-radius: 10px;
+
+  &.red,
+  &.yellow {
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  }
+
+  &.red {
+    background-color: #dc143c;
+  }
+
+  &.yellow {
+    background-color: #ffe4b5;
+  }
+}

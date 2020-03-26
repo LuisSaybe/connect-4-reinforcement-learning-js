@@ -1,0 +1,27 @@
+.point {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+  border-radius: 10px;
+
+  &.red,
+  &.yellow {
+    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  }
+
+  &.red {
+    background-color: #dc143c;
+  }
+
+  &.yellow {
+    background-color: #ffe4b5;
+  }
+}
+
+.point-container {
+  &:not(:last-child) {
+    border-bottom: 1px solid black;
+  }
+
+  padding: 0.5rem;
+}

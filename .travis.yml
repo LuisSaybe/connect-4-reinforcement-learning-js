@@ -1,0 +1,10 @@
+language: node_js
+services:
+  - docker
+install:
+  - docker build --rm -f docker/Dockerfile -t luissaybe/connect-4-reinforcement-learning-js .
+deploy:
+  provider: script
+  script: bash docker/docker-push.bash
+  on:
+    branch: master
