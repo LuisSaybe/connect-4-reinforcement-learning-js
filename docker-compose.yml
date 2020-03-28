@@ -9,3 +9,8 @@ services:
       - 80:80
     volumes:
       - ".:/root/project"
+  watch:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: "yarn watch"

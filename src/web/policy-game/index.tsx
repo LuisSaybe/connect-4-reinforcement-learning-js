@@ -43,6 +43,10 @@ export function PolicyGame() {
   };
 
   const onColumnClick = (column) => {
+    if (winner) {
+      return;
+    }
+
     const currentTurn = game.getTurn();
     game.drop(column, game.getTurn());
 
