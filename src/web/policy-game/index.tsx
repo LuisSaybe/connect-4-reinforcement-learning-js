@@ -109,7 +109,7 @@ export function PolicyGame() {
         </>
       )}
       <a
-        href="https://github.com/LuisSaybe/connect-4-reinforcement-learning-js"
+        href="https://github.com/LuisSaybe/connect-4-reinforcement-learning"
         styleName="github"
       >
         github
