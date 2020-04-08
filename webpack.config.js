@@ -29,6 +29,9 @@ module.exports = (env, argv) => {
         filename: "[contenthash].css",
       }),
     ],
+    watchOptions: {
+      ignored: /node_modules/,
+    },
     module: {
       rules: [
         {

@@ -41,6 +41,9 @@ export class Environment {
     const result = [];
 
     for (let x = 0; x < game.getRows(); x++) {
+      const row = [];
+      result.push(row);
+
       for (let y = 0; y < game.getColumns(); y++) {
         const color = game.get(x, y);
         let serialization;
@@ -53,7 +56,7 @@ export class Environment {
           serialization = Environment.ADVERSARY_COLOR;
         }
 
-        result.push(serialization);
+        row.push(serialization);
       }
     }
 
