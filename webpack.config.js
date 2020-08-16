@@ -5,8 +5,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = (env, argv) => {
   return {
     entry: [
-      "core-js/stable",
-      "regenerator-runtime/runtime",
       path.resolve(__dirname, "src/web/index.tsx"),
       path.resolve(__dirname, "src/web//sass/index.scss"),
     ],
@@ -51,7 +49,7 @@ module.exports = (env, argv) => {
               options: {
                 importLoaders: 2,
                 modules: {
-                  localIdentName: "[name]__[local]___[hash:base64:5]",
+                  localIdentName: "[path]___[name]__[local]",
                 },
               },
             },

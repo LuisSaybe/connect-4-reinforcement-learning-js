@@ -3,5 +3,5 @@ A web interface for a connect 4 agent trained with https://github.com/LuisSaybe/
 Start server
 
 ```sh
-docker-compose up
+yarn start
 ```

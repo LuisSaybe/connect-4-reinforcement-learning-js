@@ -1,18 +1,17 @@
 {
-	"presets": [ "@babel/preset-react"],
-	"plugins": [
-		[
-			"react-css-modules", {
-				"generateScopedName": "[name]__[local]___[hash:base64:5]",
-				"filetypes": {
-					".scss": {
-						"syntax": "postcss-scss",
-						"plugins": [
-							"postcss-nested"
-						]
-					}
-				}
-			}
-		]
-	]
+  "presets": ["@babel/preset-react"],
+  "plugins": [
+    [
+      "react-css-modules",
+      {
+        "generateScopedName": "[path]___[name]__[local]",
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss",
+            "plugins": ["postcss-nested"]
+          }
+        }
+      }
+    ]
+  ]
 }

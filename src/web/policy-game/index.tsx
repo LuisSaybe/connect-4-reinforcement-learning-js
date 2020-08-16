@@ -38,6 +38,7 @@ export function PolicyGame() {
       )
       .sort((a, b) => (b.value as number) - (a.value as number));
     result.dispose();
+    tensor.dispose();
 
     return actionValues[0].action;
   };
